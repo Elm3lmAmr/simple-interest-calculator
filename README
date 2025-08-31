@@ -1,0 +1,63 @@
+# Simple Interest Calculator (Bash)
+
+A tiny command‑line utility that computes **simple interest**:
+
+> Simple Interest = (Principal × Rate × Time) / 100
+
+## Features
+- Accepts principal, rate, and time via **flags** or **interactive prompts**.
+- Handles **decimal** inputs (e.g., 1000.50, 7.25, 2.5).
+- Prints both the **simple interest** and the **total amount** (principal + interest).
+- Safe defaults and input validation.
+
+## Requirements
+- Bash (4.x+) and `awk` available in your shell environment (default on macOS/Linux/WSL).
+
+## Quick Start
+```bash
+chmod +x simple-interest.sh
+./simple-interest.sh -p 1000 -r 7.5 -t 2
+```
+
+### Example Output
+```
+Principal: 1000
+Rate: 7.5
+Time: 2
+Simple Interest = 150.00
+Total Amount  = 1150.00
+```
+
+## Usage
+```bash
+./simple-interest.sh [-p principal] [-r rate] [-t time]
+# If any flag is omitted, you will be prompted.
+```
+
+## Examples
+```bash
+# All via flags
+./simple-interest.sh -p 2500 -r 6.5 -t 3
+
+# Interactive (omit flags and answer prompts)
+./simple-interest.sh
+```
+
+## Repository Structure
+```
+.
+├── simple-interest.sh
+├── CONTRIBUTING.md
+├── CODE_OF_CONDUCT.md
+├── LICENSE
+└── README.md
+```
+
+## Contributing
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) before submitting changes.
+
+## Code of Conduct
+Please review and abide by our [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
+
+## License
+This project is licensed under the **Apache License 2.0** – see [LICENSE](LICENSE) for details.
